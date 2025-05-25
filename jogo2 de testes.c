@@ -17,6 +17,8 @@
 #define FASE 4
 #define TAM 40
 
+
+//=========== artes em asci=========
 char mapa[4][40][40]=
 //mapa vila 0 ↓
 {{{' ',' ','*','*','*','*','*','*','*','*'},
@@ -103,211 +105,6 @@ char mapa[4][40][40]=
 {'*',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','*'},
 {'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*'}}};
 
-int jogadorX = 1, jogadorY = 1;
-int posInicialX = 1, posInicialY = 1;
-int chaveColetada = 0;
-int reinicios = 0;
-int interacao = 0;
-int i, j, k;
-int faseatual=0;
-
-// armazena o que ta embaixo do jogador (pode ser ' ', '@', etc.)
-char embaixoDoJogador = ' ';
-
-
-void imprimirMapa() 
-{
-    
-    if(faseatual == 0){
-        for (i = 0; i < TAM_VILA; i++) {
-            for (j = 0; j < TAM_VILA; j++) 
-            {
-                if (mapa[faseatual][i][j]=='g')
-                {
-                    printf(GREEN "'" RESET " "/*,mapa[0][linha][coluna]*/);
-                }
-                else
-                {                        printf("%c ",mapa[faseatual][i][j]);
-                }
-            }
-            printf("\n");
-        }
-    }else if(faseatual == 1){
-        for (i = 0; i < TAM_F1; i++) {
-            for (j = 0; j < TAM_F1; j++) {
-                printf("%c ", mapa[faseatual][i][j]);
-            }
-            printf("\n");
-        }
-    }else if(faseatual == 2){
-        for (i = 0; i < TAM_F2; i++) {
-            for (j = 0; j < TAM_F2; j++) {
-                printf("%c ", mapa[faseatual][i][j]);
-            }
-            printf("\n");
-        }
-    }else{
-        for (i = 0; i < TAM_F3; i++) {
-            for (j = 0; j < TAM_F3; j++) {
-                printf("%c ", mapa[faseatual][i][j]);
-            }
-            printf("\n");
-        }
-    }
-    
-}
-
-void resetarJogador() {
-    mapa[faseatual][jogadorY][jogadorX] = embaixoDoJogador; // restaura o que estava ali
-    jogadorX = posInicialX;
-    jogadorY = posInicialY;
-    embaixoDoJogador = ' '; // posição inicial é chão
-    mapa[faseatual][jogadorY][jogadorX] = '&';
-}
-
-void moverJogador(char tecla) {
-    int novoX = jogadorX;
-    int novoY = jogadorY;
-
-    if (tecla == 'w') novoY--;
-    else if (tecla == 's') novoY++;
-    else if (tecla == 'a') novoX--;
-    else if (tecla == 'd') novoX++;
-
-    char destino = mapa[faseatual][novoY][novoX];
-
-    if (destino == '*' || destino == 'D' || destino == 'P') {
-        return;
-    }
-
-    if (destino == '#' || destino == 'X' || destino == 'V') {
-        printf("Você morreu!\n");
-        reinicios++;
-        if (reinicios >= 3) {
-            printf("Reiniciou 3 vezes. Voltando ao menu.\n");
-            exit(0);
-        }
-        system("pause");
-        resetarJogador();
-        return;
-    }
-
-    // mover o jogador
-    mapa[faseatual][jogadorY][jogadorX] = embaixoDoJogador; // restaura o que estava antes
-    embaixoDoJogador = destino; // salva o que está na nova posição
-    jogadorX = novoX;
-    jogadorY = novoY;
-    mapa[faseatual][jogadorY][jogadorX] = '&';
-}
-
-void interagir() {
-
-    if (embaixoDoJogador == '@') {
-        chaveColetada = 1;
-        embaixoDoJogador = ' ';
-        printf("Você pegou a chave!\n");
-        for (k = 0; k < faseatual; k++){
-        if(faseatual == 0){
-            for (i = 0; i < TAM_VILA; i++) {
-                for (j = 0; j < TAM_VILA; j++) {
-                    if(mapa[faseatual][i][j] == 'D'){
-                        mapa[faseatual][i][j] = '=';
-                    }
-                }
-            }
-        }else if(faseatual == 1){
-            for (i = 0; i < TAM_F1; i++) {
-                for (j = 0; j < TAM_F1; j++) {
-                    if(mapa[faseatual][i][j] == 'D'){
-                        mapa[faseatual][i][j] = '=';
-                    }
-                }
-            }
-        }else if(faseatual == 2){
-            for (i = 0; i < TAM_F2; i++) {
-                for (j = 0; j < TAM_F2; j++) {
-                    if(mapa[faseatual][i][j] == 'D'){
-                        mapa[faseatual][i][j] = '=';
-                    }
-                }
-            }
-        }else{
-            for (i = 0; i < TAM_F3; i++) {
-                for (j = 0; j < TAM_F3; j++) {
-                    if(mapa[faseatual][i][j] == 'D'){
-                        mapa[faseatual][i][j] = '=';
-                    }
-                }
-            }
-        }
-    }
-        system("pause");
-    } else if (embaixoDoJogador == '=' && chaveColetada) {
-        printf("Você abriu a porta!\n");
-        system("pause");
-    } else if (embaixoDoJogador == 'O') {
-        printf("Você apertou o botão!\n");
-        system("pause");
-    }
-    
-}
-
-void moverMonstroAleatorio() {
-    int x, y;
-    while(faseatual == 2){
-        for (y = 0; y < TAM_F2; y++) {
-            for (x = 0; x < TAM_F2; x++) {
-                if (mapa[faseatual][y][x] == 'X') {
-                    int dir = rand() % 4;
-                    int novoX = x;
-                    int novoY = y;
-    
-                    if (dir == 0) novoY--;
-                    else if (dir == 1) novoY++;
-                    else if (dir == 2) novoX--;
-                    else if (dir == 3) novoX++;
-    
-                    if (mapa[faseatual][novoY][novoX] == ' ' || mapa[faseatual][novoY][novoX] == '&') {
-                        if (mapa[faseatual][novoY][novoX] == '&') {
-                            printf("O monstro te pegou!\n");
-                            reinicios++;
-                            if (reinicios >= 3) {
-                                printf("Reiniciou 3 vezes. Voltando ao menu.\n");
-                                exit(0);
-                            }
-                            system("pause");
-                            resetarJogador();
-                            return;
-                        }
-                        mapa[faseatual][novoY][novoX] = 'X';
-                        mapa[faseatual][y][x] = ' ';
-                        return;
-                    }
-                }
-            }
-        }
-    }
-}
-
-void PosInicialVariavel()
-{
-    int i, j;
-    for (i = 0; i < TAM_VILA; i++)
-    {
-        for (j = 0; j < TAM_VILA; j++)
-        {
-            if(mapa[faseatual][i][j] == '&')
-            {
-                posInicialX=j;
-                posInicialY=i;
-                jogadorY = i;
-                jogadorX = j;
-                break;
-            }
-        }
-    }
-}
-
 char cutscene1[50][160]={                                                                                                                        
 {"                                                                                                                      \n"},
 {"                                                                                                                      \n"},
@@ -363,8 +160,244 @@ char menuletra[10][250]={
 {"  \\ \\  \\    \\ \\  \\ \\  \\_|\\ \\ \\  \\\\ \\  \\ \\  \\\\\\  \\  \n"},
 {"   \\ \\__\\    \\ \\__\\ \\_______\\ \\__\\\\ \\__\\ \\_______\\ \n"},
 {"    \\|__|     \\|__|\\|_______|\\|__| \\|__|\\|_______| \n"}
-    };
+};
 
+
+int jogadorX = 1, jogadorY = 1;
+int posInicialX = 1, posInicialY = 1;
+int chaveColetada = 0;
+int reinicios = 0;
+int interacao = 0;
+int i, j, k;
+int faseatual=0;
+// armazena o que ta embaixo do jogador (pode ser ' ', '@', etc.)
+char embaixoDoJogador = ' ';
+
+
+void imprimirMapa() 
+{
+    
+    if(faseatual == 0){
+        for (i = 0; i < TAM_VILA; i++) {
+            for (j = 0; j < TAM_VILA; j++) 
+            {
+                int valorandom=rand()%2;
+                if (valorandom==0 && mapa[0][i][j]=='g')
+                    {
+                        printf(GREEN "'" RESET " "/*,mapa[0][i][j]*/);
+                    }
+                    else if (valorandom==1 && mapa[0][i][j]=='g')
+                    {
+                        printf(GREEN "," RESET " "/*,mapa[0][i][j]*/);
+                    }
+                    else
+                    {
+                        printf("%c ",mapa[faseatual][i][j]);
+                    }
+                    
+            }
+            printf("\n");
+        }
+    }else if(faseatual == 1){
+        for (i = 0; i < TAM_F1; i++) {
+            for (j = 0; j < TAM_F1; j++) {
+                printf("%c ", mapa[faseatual][i][j]);
+            }
+            printf("\n");
+        }
+    }else if(faseatual == 2){
+        for (i = 0; i < TAM_F2; i++) {
+            for (j = 0; j < TAM_F2; j++) {
+                printf("%c ", mapa[faseatual][i][j]);
+            }
+            printf("\n");
+        }
+    }else{
+        for (i = 0; i < TAM_F3; i++) {
+            for (j = 0; j < TAM_F3; j++) {
+                printf("%c ", mapa[faseatual][i][j]);
+            }
+            printf("\n");
+        }
+    }
+    
+}
+
+void resetarJogador() {
+    mapa[faseatual][jogadorY][jogadorX] = embaixoDoJogador; // restaura o que estava ali
+    jogadorX = posInicialX;
+    jogadorY = posInicialY;
+    embaixoDoJogador = ' '; // posição inicial é chão
+    mapa[faseatual][jogadorY][jogadorX] = '&';
+}
+
+void moverJogador(char tecla) {
+    int novoX = jogadorX;
+    int novoY = jogadorY;
+
+    if (tecla == 'w') novoY--;
+    else if (tecla == 's') novoY++;
+    else if (tecla == 'a') novoX--;
+    else if (tecla == 'd') novoX++;
+    else
+        return;
+
+    char destino = mapa[faseatual][novoY][novoX];
+
+    if (destino == '*' || destino == 'D' || destino == 'P') {
+        return;
+    }
+
+    if (destino == '#' || destino == 'X' || destino == 'V') {
+        printf("Você morreu!\n");
+        reinicios++;
+        if (reinicios >= 3) {
+            printf("Reiniciou 3 vezes. Voltando ao menu.\n");
+            exit(0);
+        }
+        system("pause");
+        resetarJogador();
+        return;
+    }
+
+    // mover o jogador
+    mapa[faseatual][jogadorY][jogadorX] = embaixoDoJogador; // restaura o que estava antes
+    embaixoDoJogador = destino; // salva o que está na nova posição
+    jogadorX = novoX;
+    jogadorY = novoY;
+    mapa[faseatual][jogadorY][jogadorX] = '&';
+}
+
+void PosInicialVariavel()
+{
+    int i, j;
+    for (i = 0; i < 40; i++)
+    {
+        for (j = 0; j < 40; j++)
+        {   
+            if(mapa[faseatual][i][j] == '&')
+            {
+                posInicialX=j;
+                posInicialY=i;
+                jogadorY = i;
+                jogadorX = j;
+                break;
+            }
+        }
+    }
+}
+
+void LimpaPersonagemDaFase() {
+    int i, j;
+    int tam;
+    if (faseatual == 0) tam = TAM_VILA;
+    else if (faseatual == 1) tam = TAM_F1;
+    else if (faseatual == 2) tam = TAM_F2;
+    else if (faseatual == 3) tam = TAM_F3;
+
+    for (i = 0; i < tam; i++) 
+    {
+        for (j = 0; j < tam; j++) 
+        {
+            if (mapa[faseatual][i][j] == '&') 
+            {
+                mapa[faseatual][i][j] = ' ';
+            }
+        }
+    }
+}
+
+void interagir() {
+
+    if (embaixoDoJogador == '@') {
+        chaveColetada = 1;
+        embaixoDoJogador = ' ';
+        printf("Você pegou a chave!\n");
+        for (k = 0; k <40 ; k++){
+        if(faseatual == 0){
+            for (i = 0; i < TAM_VILA; i++) {
+                for (j = 0; j < TAM_VILA; j++) {
+                    if(mapa[faseatual][i][j] == 'D'){
+                        mapa[faseatual][i][j] = '=';
+                    }
+                }
+            }
+        }else if(faseatual == 1){
+            for (i = 0; i < TAM_F1; i++) {
+                for (j = 0; j < TAM_F1; j++) {
+                    if(mapa[faseatual][i][j] == 'D'){
+                        mapa[faseatual][i][j] = '=';
+                    }
+                }
+            }
+        }else if(faseatual == 2){
+            for (i = 0; i < TAM_F2; i++) {
+                for (j = 0; j < TAM_F2; j++) {
+                    if(mapa[faseatual][i][j] == 'D'){
+                        mapa[faseatual][i][j] = '=';
+                    }
+                }
+            }
+        }else{
+            for (i = 0; i < TAM_F3; i++) {
+                for (j = 0; j < TAM_F3; j++) {
+                    if(mapa[faseatual][i][j] == 'D'){
+                        mapa[faseatual][i][j] = '=';
+                    }
+                }
+            }
+        }
+    }
+        system("pause");
+    } else if (embaixoDoJogador == '=' && chaveColetada) {
+        printf("Você abriu a porta!\n");
+        LimpaPersonagemDaFase(faseatual);
+        faseatual++;
+        PosInicialVariavel();
+        system("pause");
+    } else if (embaixoDoJogador == 'O') {
+        printf("Você apertou o botão!\n");
+        system("pause");
+    }
+    
+}
+
+void moverMonstroAleatorio() {
+    int x, y;
+    while(faseatual == 2){
+        for (y = 0; y < TAM_F2; y++) {
+            for (x = 0; x < TAM_F2; x++) {
+                if (mapa[faseatual][y][x] == 'X') {
+                    int dir = rand() % 4;
+                    int novoX = x;
+                    int novoY = y;
+    
+                    if (dir == 0) novoY--;
+                    else if (dir == 1) novoY++;
+                    else if (dir == 2) novoX--;
+                    else if (dir == 3) novoX++;
+    
+                    if (mapa[faseatual][novoY][novoX] == ' ' || mapa[faseatual][novoY][novoX] == '&') {
+                        if (mapa[faseatual][novoY][novoX] == '&') {
+                            printf("O monstro te pegou!\n");
+                            reinicios++;
+                            if (reinicios >= 3) {
+                                printf("Reiniciou 3 vezes. Voltando ao menu.\n");
+                                exit(0);
+                            }
+                            system("pause");
+                            resetarJogador();
+                            return;
+                        }
+                        mapa[faseatual][novoY][novoX] = 'X';
+                        mapa[faseatual][y][x] = ' ';
+                        return;
+                    }
+                }
+            }
+        }
+    }
+}
 
 int main()
 {
@@ -444,7 +477,9 @@ int main()
             scanf(" %c",&nada);
             while(morto==0)
             {
+                
                 PosInicialVariavel();
+                embaixoDoJogador = 'g';
                 while (faseatual==0)
                 {
                     system("cls");
@@ -462,14 +497,30 @@ int main()
                     moverMonstroAleatorio();
                     Sleep(200);
                 }
+                embaixoDoJogador = ' ';
                 while (faseatual==1)
                 {
-                    /* code */
+                    system("cls");
+                    imprimirMapa();
+    
+                    char tecla = _getch();
+                    if (tecla == 'i') {
+                        interagir();
+                    } else {
+                        moverJogador(tecla);
+                    }
+                    if (_kbhit()) { //_kbhit e _getch reconhecem a tecla pressionada no teclado e puxa do caractere referente
+                    }
+    
+                    moverMonstroAleatorio();
+                    Sleep(200);
                 }
+                embaixoDoJogador = ' ';
                 while (faseatual==2)
                 {
                     /* code */
                 }
+                embaixoDoJogador = ' ';
                 while (faseatual==3)
                 {
                     /* code */
@@ -499,9 +550,15 @@ int main()
             {
                 for(coluna=0;coluna<10;coluna++)
                 {
-                    if (mapa[0][linha][coluna]=='g')
+                    int valorandom=rand()%2;
+                    
+                    if (valorandom==0 && mapa[0][linha][coluna]=='g')
                     {
                         printf(GREEN "'" RESET " "/*,mapa[0][linha][coluna]*/);
+                    }
+                    else if (valorandom==1 && mapa[0][linha][coluna]=='g')
+                    {
+                        printf(GREEN "," RESET " "/*,mapa[0][linha][coluna]*/);
                     }
                     else
                     {
@@ -536,7 +593,7 @@ int main()
             }
         
         
-        
+            scanf(" %c",&nada);
 
 
             
