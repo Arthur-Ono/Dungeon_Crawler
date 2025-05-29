@@ -36,13 +36,13 @@ char mapabackup[4][40][40]=
       {' ', ' ', '*', '*', '*', '*', '*', '*', '*', '*'}},
      // mapa fase 1 ↓
      {{'*', '*', '*', '*', '*', '*', '*', '*', '*', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '&', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', '@', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', '3', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', '3', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', '*', '1', '3', ' ', ' ', '@', ' ', ' ', '*'},
+      {'*', 'L', '1', '3', ' ', ' ', ' ', ' ', '&', '*'},
+      {'*', '*', '1', '3', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', '3', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', '3', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'D', '*'},
       {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}},
      // mapa fase 2 ↓
@@ -81,17 +81,17 @@ char mapabackup[4][40][40]=
       {'*', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', 'L', 'L', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', 'L', 'L', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', 'L', 'L', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', 'L', 'L', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', '#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '3', '3', '3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '3', '3', '3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '2', '1', '1', '2', '3', ' ', ' ', ' ', ' ', ' ', '3', '2', '1', '1', '2', '3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '2', '#', '#', '#', '#', '2', '3', ' ', ' ', ' ', '3', '2', '#', '#', '#', '#', '2', '3', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '1', '#', 'L', 'L', '#', '1', '3', ' ', ' ', ' ', '3', '1', '#', 'L', 'L', '#', '1', '3', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '1', '#', 'L', 'L', '#', '1', '3', ' ', ' ', ' ', '3', '1', '#', 'L', 'L', '#', '1', '3', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '2', '#', '#', '#', '#', '2', '3', ' ', ' ', ' ', '3', '2', '#', '#', '#', '#', '2', '3', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '2', '1', '1', '2', '3', ' ', ' ', ' ', ' ', ' ', '3', '2', '1', '1', '2', '3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '3', '3', '3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3', '3', '3', '3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
-      {'*', '*', '*', '*', '*', '*', '*', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
+      {'*', '*', '*', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', 'V', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
       {'*', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '*'},
@@ -150,12 +150,12 @@ char cutscene1[50][160]={
 {"   #                                       __| | ___  ___  __ _ / _(_) __ _                                          %\n"},
 {"   %                                      / _` |/ _ \\/ __|/ _` | |_| |/ _` |                                         %\n"},
 {"   #                                     | (_| |  __/\\__ \\ (_| |  _| | (_| |_ _ _ _ _ _ _ _ _ _                      %\n"},
-{"   %                                     \\__,_|\\___||___/\\__,_|_| |_|\\__,_(_|_|_|_|_|_|_|_|_|_)                      #\n"},
+{"   %                                      \\__,_|\\___||___/\\__,_|_| |_|\\__,_(_|_|_|_|_|_|_|_|_|_)                     #\n"},
 {"   %                                                                                                                 #\n"},
 {"   (#((//**/,,,*//.(//*,*//(/,//*#(*///(//*(/(**/(((/((((**//*/((/*/((((/*(#(((//(**/,//**/,*/(///////****//(**//#(# \n"}};
 
 //menu em ascii ↓
-char menuletra[10][250]={
+/*char menuletra[10][250]={
 {" _____ ______   _______   ________   ___  ___      \n"},     
 {"|\\   _ \\  _   \\|\\  ___ \\ |\\   ___  \\|\\  \\|\\  \\     \n"},
 {"\\ \\  \\\\\\__\\ \\  \\ \\   __/|\\ \\  \\\\ \\  \\ \\  \\\\\\  \\    \n"},
@@ -164,6 +164,34 @@ char menuletra[10][250]={
 {"   \\ \\__\\    \\ \\__\\ \\_______\\ \\__\\\\ \\__\\ \\_______\\ \n"},
 {"    \\|__|     \\|__|\\|_______|\\|__| \\|__|\\|_______| \n"}
 };
+*/
+
+
+char menuletra[25][250]={
+{" ▄████▄   ▄▄▄        ██████ ▄▄▄█████▓ ██▓    ▓█████            \n"},
+{"▒██▀ ▀█  ▒████▄    ▒██    ▒ ▓  ██▒ ▓▒▓██▒    ▓█   ▀            \n"},
+{"▒▓█    ▄ ▒██  ▀█▄  ░ ▓██▄   ▒ ▓██░ ▒░▒██░    ▒███              \n"},
+{"▒▓▓▄ ▄██▒░██▄▄▄▄██   ▒   ██▒░ ▓██▓ ░ ▒██░    ▒▓█  ▄            \n"},
+{"▒ ▓███▀ ░ ▓█   ▓██▒▒██████▒▒  ▒██▒ ░ ░██████▒░▒████▒           \n"},
+{"░ ░▒ ▒  ░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░  ▒ ░░   ░ ▒░▓  ░░░ ▒░ ░           \n"},
+{"  ░  ▒     ▒   ▒▒ ░░ ░▒  ░ ░    ░    ░ ░ ▒  ░ ░ ░  ░           \n"},
+{"░          ░   ▒   ░  ░  ░    ░        ░ ░      ░              \n"},
+{"░ ░            ░  ░      ░               ░  ░   ░  ░           \n"},
+{"░                                                              \n"},
+{" ▄████▄   ▒█████   ███▄    █   █████   █    ██ ▓█████  ██▀███  \n"},
+{"▒██▀ ▀█  ▒██▒  ██▒ ██ ▀█   █ ▒██▓  ██▒ ██  ▓██▒▓█   ▀ ▓██ ▒ ██▒\n"},
+{"▒▓█    ▄ ▒██░  ██▒▓██  ▀█ ██▒▒██▒  ██░▓██  ▒██░▒███   ▓██ ░▄█ ▒\n"},
+{"▒▓▓▄ ▄██▒▒██   ██░▓██▒  ▐▌██▒░██  █▀ ░▓▓█  ░██░▒▓█  ▄ ▒██▀▀█▄  \n"},
+{"▒ ▓███▀ ░░ ████▓▒░▒██░   ▓██░░▒███▒█▄ ▒▒█████▓ ░▒████▒░██▓ ▒██▒\n"},
+{"░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒▒░ ▒ ░▒▓▒ ▒ ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░\n"},
+{"  ░  ▒     ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ▒░  ░ ░░▒░ ░ ░  ░ ░  ░  ░▒ ░ ▒░\n"},
+{"░        ░ ░ ░ ▒     ░   ░ ░    ░   ░  ░░░ ░ ░    ░     ░░   ░ \n"},
+{"░ ░          ░ ░           ░     ░       ░        ░  ░   ░     \n"},
+{"░                                                              \n"}
+};
+
+
+
 
 //======== variaveis globais ================
 int jogadorX = 1, jogadorY = 1;
@@ -175,6 +203,7 @@ int i, j, k;
 int faseatual=0;
 int morto=0;
 char embaixoDoJogador = ' ';// armazena o que ta embaixo do jogador (pode ser ' ', '@', etc.)
+char textoNpc[300]={"Os ecos do castelo rugem....ele clama por um desafiante....\nSe você for adentrá-lo, que fique de dica:\nUse W,A,S,D para se movimentar e I para interagir...\nPor favor, fique longe dos #,X e V... principalmente do V....\nE cuidado... o castelo permite apenas 3 erros....\n\n"};
 
 /*================== funções =============================================
   ================== funções =============================================
@@ -202,13 +231,34 @@ void cursorRodape() {
     else tam = TAM_F3;
     coordenadas(0, tam + 1); // Linha logo após o mapa
 }
+/*
+void cursorCentral()
+{
+    int tam;
+    if (faseatual == 0) tam = TAM_VILA;
+    else if (faseatual == 1) tam = TAM_F1;
+    else if (faseatual == 2) tam = TAM_F2;
+    else tam = TAM_F3;
+    coordenadas(200,150+tam);
+}
+*/
 
+void limparTexto()
+{
+    cursorRodape();
+    for (i = 0; i < 10; i++)
+    {
+        for ( j = 0; j < 100; j++)
+        {
+            printf(" ");
+        }
+    }
+}
 
 //=========== funções relacionas a mapas, no geral ============================
 
 void imprimirMapa() 
 {
-    
     if(faseatual == 0){
         for (i = 0; i < TAM_VILA; i++) {
             for (j = 0; j < TAM_VILA; j++) 
@@ -352,7 +402,7 @@ int tam;
     for (int i = 0; i < tam; i++) {
         for (int j = 0; j < tam; j++) {
             coordenadas(j, i);
-            int valorandom = rand() % 2;
+            int valorandom = rand() % 16;
             
             if (valorandom == 0 && mapa[faseatual][i][j]=='g')
             {
@@ -363,8 +413,8 @@ int tam;
                 printf(GREEN "," RESET " ");
             }
             
-            
-            else if (valorandom==0 && mapa[faseatual][i][j]=='L')
+            valorandom = rand() % 2;
+            if (valorandom==0 && mapa[faseatual][i][j]=='L')
             {
                 printf(RED "'" RESET " "/*,mapa[0][i][j]*/);
             }
@@ -372,6 +422,41 @@ int tam;
             {
                 printf(YELLOW "," RESET " "/*,mapa[0][i][j]*/);
             }
+
+            valorandom = rand() % 2;
+            if (valorandom==0 && mapa[faseatual][i][j]=='1')
+            {
+                printf(YELLOW "▓" RESET " ");
+            }
+            else if(valorandom==1 && mapa[faseatual][i][j]=='1')
+            {
+                printf(YELLOW "▒" RESET " ");
+            }
+
+
+
+            valorandom = rand() % 2;
+            if (valorandom==0 && mapa[faseatual][i][j]=='2')
+            {
+                printf(YELLOW "▒" RESET " ");
+            }
+            if (valorandom==1 && mapa[faseatual][i][j]=='2')
+            {
+                printf(YELLOW "░" RESET " ");
+            }
+
+
+            valorandom = rand() % 2;
+            if (valorandom==0 && mapa[faseatual][i][j]=='3')
+            {
+                printf(YELLOW "░" RESET " ");
+            }
+            if (valorandom==1 && mapa[faseatual][i][j]=='3')
+            {
+                printf(YELLOW " " RESET " ");
+                
+            }
+
             
             mapaAnterior[faseatual][i][j] = mapa[faseatual][i][j];
         }
@@ -396,7 +481,6 @@ void verificarMorto()
         cursorRodape();
         printf("VOCÊ NÃO MERECE ESTAR NO CASTELO, SEU ENERGÚMENO INÚTIL\n");
         morto=1;
-        system("pause");
     }
 }
 
@@ -423,7 +507,7 @@ void moverJogador(char tecla)
 
     char destino = mapa[faseatual][novoY][novoX];
 
-    if (destino == '*' || destino == 'D' || destino == 'P') {
+    if (destino == '*' || destino == 'D' || destino == 'P' || destino=='L') {
         return;
     }
 
@@ -433,6 +517,7 @@ void moverJogador(char tecla)
         reinicios++;
         verificarMorto();
         system("pause");
+        limparTexto();
         resetarJogador();
         return;
     }
@@ -492,6 +577,7 @@ void interagir()
     {
         chaveColetada = 1;
         embaixoDoJogador = ' ';
+        cursorRodape();
         printf("Você pegou a chave!\n");
         if (faseatual == 0)
         {
@@ -549,17 +635,21 @@ void interagir()
             }
         }
         system("pause");
+        limparTexto();
     }
     else if (embaixoDoJogador == '=' && chaveColetada)
     {
+        cursorRodape();
         printf("Você abriu a porta!\n");
         LimpaPersonagemDaFase(faseatual);
         faseatual++;
         PosInicialVariavel();
         system("pause");
+        limparTexto();
     }
     else if (embaixoDoJogador == 'O')
     {
+        cursorRodape();
         printf("Você apertou o botão!\n");
         if (faseatual == 2)
         {
@@ -574,6 +664,7 @@ void interagir()
             }
         }
         system("pause");
+        limparTexto();
     }
     else if (embaixoDoJogador == '>')
     {
@@ -592,6 +683,20 @@ void interagir()
             }
         }
     }
+    else if(mapa[faseatual][jogadorY][jogadorX+1]=='P' || mapa[faseatual][jogadorY][jogadorX-1]=='P'||   
+            mapa[faseatual][jogadorY+1][jogadorX]=='P'|| mapa[faseatual][jogadorY-1][jogadorX]=='P')
+    {
+        cursorRodape();
+        for (i = 0; i < 300; i++)
+        {
+            Sleep(50);
+            printf("%c",textoNpc[i]);
+        }
+        system("pause");
+        limparTexto();
+        
+    }
+
 }
 
 //===============funções dos monstros ====================
@@ -673,8 +778,8 @@ void moverMonstroAleatorio()
                 printf("O monstro te pegou!\n");                        
                 reinicios++;                        
                 verificarMorto();
+                limparTexto();
                 system("pause");
-                resetarJogador();
                 return;
             }
             mapa[faseatual][novoY][novoX] = 'X';
@@ -737,8 +842,100 @@ void moverMonstroAleatorio()
 
     */
 }
-            
-//======== função de rodar o jogo ====================
+
+void moverMonstroInteligente() {
+    int x, y;
+    // Procura o monstro 'V' no mapa
+    for (y = 0; y < TAM; y++) {
+        for (x = 0; x < TAM; x++) {
+            if (mapa[faseatual][y][x] == 'V') {
+                // Calcula a diferença de posição entre monstro e jogador
+                int deltaX = jogadorX - x;
+                int deltaY = jogadorY - y;
+                
+                int novoX = x;
+                int novoY = y;
+                
+                // Determina o movimento baseado na maior distância (Manhattan distance)
+                if (abs(deltaX) > abs(deltaY)) {
+                    // Move horizontalmente em direção ao jogador
+                    if (deltaX > 0) novoX++; // Jogador está à direita
+                    else if (deltaX < 0) novoX--; // Jogador está à esquerda
+                } else if (abs(deltaY) > 0) {
+                    // Move verticalmente em direção ao jogador
+                    if (deltaY > 0) novoY++; // Jogador está abaixo
+                    else if (deltaY < 0) novoY--; // Jogador está acima
+                }
+                
+                // Verifica se a nova posição é válida
+                char destino = mapa[faseatual][novoY][novoX];
+                
+                // Pode se mover para espaços vazios ou onde está o jogador
+                if (destino == ' ' || destino == '&') {
+                    if (destino == '&') {
+                        // Monstro pegou o jogador
+                        printf("O monstro inteligente te pegou!\n");
+                        reinicios++;
+                        verificarMorto();
+                        system("pause");
+                        resetarJogador();
+                        return;
+                    }
+                    // Move o monstro para a nova posição
+                    mapa[faseatual][novoY][novoX] = 'V';
+                    mapa[faseatual][y][x] = ' ';
+                    return;
+                }
+                // Se não pode se mover na direção preferida, tenta movimento alternativo
+                else {
+                    // Tenta movimento vertical se tentou horizontal primeiro
+                    if (abs(deltaX) > abs(deltaY) && abs(deltaY) > 0) {
+                        novoX = x; // Reset horizontal movement
+                        if (deltaY > 0) novoY = y + 1;
+                        else novoY = y - 1;
+                        
+                        destino =  mapa[faseatual][novoY][novoX];
+                        if (destino == ' ' || destino == '&') {
+                            if (destino == '&') {
+                                printf("O monstro inteligente te pegou!\n");
+                                reinicios++;
+                                verificarMorto();
+                                resetarJogador();
+                                return;
+                            }
+                            mapa[faseatual][novoY][novoX] = 'V';
+                            mapa[faseatual][y][x] = ' ';
+                            return;
+                        }
+                    }
+                    // Tenta movimento horizontal se tentou vertical primeiro
+                    else if (abs(deltaY) >= abs(deltaX) && abs(deltaX) > 0) {
+                        novoY = y; // Reset vertical movement
+                        if (deltaX > 0) novoX = x + 1;
+                        else novoX = x - 1;
+                        
+                        destino =  mapa[faseatual][novoY][novoX];
+                        if (destino == ' ' || destino == '&') {
+                            if (destino == '&') {
+                                printf("O monstro inteligente te pegou!\n");
+                                reinicios++;
+                                verificarMorto();
+                                resetarJogador();
+                                return;
+                            }
+                            mapa[faseatual][novoY][novoX] = 'V';
+                            mapa[faseatual][y][x] = ' ';
+                            return;
+                        }
+                    }
+                }
+                return; // Sai após processar o primeiro (e único) monstro 'V'
+            }
+        }
+    }
+}
+
+//==== funções gerais do jogo e do terminal windows================
 void RodarOJogo()
 {
     desenharDiferenças();
@@ -761,11 +958,41 @@ void RodarOJogo()
     }
 
     moverMonstroAleatorio();
+    int valorRandom=rand()%4;
+    if (valorRandom==0 || valorRandom==1 || valorRandom==2)
+    {
+        moverMonstroInteligente();
+    }
     Sleep(200);
     
 }
 
-//==== configurações gerais do jogo================
+void animaçãoMenu()
+{           
+    int tempo=0;
+    int frames=0;
+    int menu_contador=10;
+    int i=0;
+    int j=24; //<------JAMAIS MUDAR ESSA VARIAVEL PARA 10 OU MAIS
+//animação de iniciar o menu
+    
+    for(i=0;i<j;i++)
+    {  
+        system("cls");
+        frames=j-1-i;
+        for ( tempo = 0; tempo < 40000000; tempo++) //isso eh so pra nao printar instantaneamente....
+        {
+            if (tempo==400000)
+            {        
+                for (menu_contador = frames; menu_contador<=j; menu_contador++)
+                {                  
+                    printf("%s",menuletra[menu_contador]);
+                }
+            }
+        }
+    }
+}
+
 void ajustarTamanhoConsole(int colunas, int linhas) 
 {
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -803,62 +1030,36 @@ void configurarCores()
 }
 
 
+// =============================== programa em sim aqui ====================================
+// =============================== programa em sim aqui ====================================
+// =============================== programa em sim aqui ====================================
+// =============================== programa em sim aqui ====================================
+// =============================== programa em sim aqui ====================================
+// =============================== programa em sim aqui ====================================
+// ======================AAAAAAAAA programa em sim aqui AAAAAAAAA===========================
+// ========================AAAAAAA programa em sim aqui AAAAAAA=============================
+// ==========================AAAAA programa em sim aqui AAAAA===============================
+// ============================AAA programa em sim aqui AAA=================================
+// ==============================A programa em sim aqui A===================================
+// ================================= programa em sim  ======================================
+// =================================== ograma em s  ========================================
+// ===================================== grama em ==========================================
+// ======================================= rama ============================================
+// =========================================  ==============================================
+// =========================================================================================
+
 int main()
 {
     srand(time(NULL));
-    ajustarTamanhoConsole(120,50);
+    ajustarTamanhoConsole(200,60);
     configurarLinguagem();
     configurarCores();
     int linha,coluna;
-
-   
-    // =============================== programa em sim aqui ====================================
-    // =============================== programa em sim aqui ====================================
-    // =============================== programa em sim aqui ====================================
-    // =============================== programa em sim aqui ====================================
-    // =============================== programa em sim aqui ====================================
-    // =============================== programa em sim aqui ====================================
-    // ======================AAAAAAAAA programa em sim aqui AAAAAAAAA===========================
-    // ========================AAAAAAA programa em sim aqui AAAAAAA=============================
-    // ==========================AAAAA programa em sim aqui AAAAA===============================
-    // ============================AAA programa em sim aqui AAA=================================
-    // ==============================A programa em sim aqui A===================================
-    // ================================= programa em sim  ======================================
-    // =================================== ograma em s  ========================================
-    // ===================================== grama em ==========================================
-    // ======================================= rama ============================================
-    // =========================================  ==============================================
-    // =========================================================================================
-
-
-
     int menu=0;
     while (menu!=3) //jogo começa aqui
-    {
-        int i=0;
-        int j=9; //<------JAMAIS MUDAR ESSA VARIAVEL PARA 10 OU MAIS
-        int tempo=0;
-        int menu_contador=10;
-        int teste=0;
-        
+    {   
+        animaçãoMenu();
         resetGeral();  
-        //animação de iniciar o menu 
-        for(i=0;i<j;i++)
-        {  
-            system("cls");
-            teste=j-1-i;
-            for ( tempo = 0; tempo < 80000000; tempo++) //isso eh so pra nao printar instantaneamente....
-            {
-                if (tempo==400000)
-                {        
-                    for (menu_contador = teste; menu_contador<=j; menu_contador++)
-                    {                        
-                        printf("%s",menuletra[menu_contador]);
-                    }
-                }
-            }
-            
-        }
         
         printf("\nPara jogar digite 1\nPara ver os créditos digite 2");
         printf("\nPara sair do programa digite 3\nPara desenhar todos os mapas, digite 5\n");
@@ -872,6 +1073,8 @@ int main()
             }
             
             system ("pause");
+
+
             while(morto==0)
             {
                 system("cls");
@@ -909,8 +1112,10 @@ int main()
                 if (morto)break;
 
                 if (faseatual==4)
-                {
-                    printf("parabéns!!! você finalizou o jogo!!!");
+                {   
+                    limparTexto();
+                    cursorRodape();
+                    printf("Você conquistou o castelo!!!\n");
                     system ("pause");
                     faseatual = 0;
                     jogadorX = 1;
@@ -930,10 +1135,9 @@ int main()
         }
         if (menu==2)
         {
-            printf("teste -- essa eh a pagina menu 2\n");
-            
-
-
+            printf("Créditos\nArthur Vicente Ono\nCaio Augusto Freitas Barbosa de Souza\nLuan Queiroz Fonseca de Menezes\n");
+            system("pause");
+            limparTexto();
         }
         
         if (menu==3)
