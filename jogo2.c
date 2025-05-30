@@ -340,7 +340,7 @@ void cursorCentral()
 void limparTexto()
 {
     cursorRodape();
-    for (i = 0; i < 20; i++)
+    for (i = 0; i < 8; i++)
     {
         for ( j = 0; j < 100; j++)
         {
@@ -884,7 +884,8 @@ void moverMonstroAleatorio()
                 cursorRodape();                        
                 printf("O monstro te pegou!\n");                        
                 system("pause");
-                reinicios++;                        
+                reinicios++;
+                resetarJogador();                        
                 verificarMorto();
                 limparTexto();
                 return;
