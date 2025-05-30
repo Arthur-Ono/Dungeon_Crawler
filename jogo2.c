@@ -547,6 +547,16 @@ void moverJogador(char tecla)
     else
         return;
 
+    // Verificação de limites
+    int tam;
+    if (faseatual == 0) tam = TAM_VILA;
+    else if (faseatual == 1) tam = TAM_F1;
+    else if (faseatual == 2) tam = TAM_F2;
+    else tam = TAM_F3;
+
+    if (novoX < 0 || novoY < 0 || novoX >= tam || novoY >= tam)
+        return;
+
     char destino = mapa[faseatual][novoY][novoX];
 
     if (destino == '*' || destino == 'D' || destino == 'P' || destino=='L') {
