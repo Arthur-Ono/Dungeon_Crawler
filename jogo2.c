@@ -883,10 +883,10 @@ void moverMonstroAleatorio()
             {                          
                 cursorRodape();                        
                 printf("O monstro te pegou!\n");                        
+                system("pause");
                 reinicios++;                        
                 verificarMorto();
                 limparTexto();
-                system("pause");
                 return;
             }
             mapa[faseatual][novoY][novoX] = 'X';
@@ -981,10 +981,11 @@ void moverMonstroInteligente() {
                 if (destino == ' ' || destino == '&') {
                     if (destino == '&') {
                         // Monstro pegou o jogador
+                        cursorRodape();
                         printf("O monstro inteligente te pegou!\n");
+                        system("pause");
                         reinicios++;
                         verificarMorto();
-                        system("pause");
                         resetarJogador();
                         return;
                     }
@@ -1004,7 +1005,9 @@ void moverMonstroInteligente() {
                         destino =  mapa[faseatual][novoY][novoX];
                         if (destino == ' ' || destino == '&') {
                             if (destino == '&') {
+                                cursorRodape();
                                 printf("O monstro inteligente te pegou!\n");
+                                system("pause");
                                 reinicios++;
                                 verificarMorto();
                                 resetarJogador();
@@ -1024,7 +1027,9 @@ void moverMonstroInteligente() {
                         destino =  mapa[faseatual][novoY][novoX];
                         if (destino == ' ' || destino == '&') {
                             if (destino == '&') {
+                                cursorRodape();
                                 printf("O monstro inteligente te pegou!\n");
+                                system("pause");
                                 reinicios++;
                                 verificarMorto();
                                 resetarJogador();
