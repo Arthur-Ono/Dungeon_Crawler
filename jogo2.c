@@ -155,47 +155,99 @@ char cutscene1[50][160]={
 {"   (#((//**/,,,*//.(//*,*//(/,//*#(*///(//*(/(**/(((/((((**//*/((/*/((((/*(#(((//(**/,//**/,*/(///////****//(**//#(# \n"}};
 
 char cutscene2[50][250]={                                                                      
-{"                                      .@%%&@                                                                                                                    \n"},
-{"                                %&#&          .&%(&                                                                                                             \n"}, 
-{"                             &&%  * / .  *         %%%                                                                                                          \n"},
-{"                           &%#,/ . .  /     /         %%                                                                                                        \n"},
-{"                          %%   . % @  ,       #         %%                                                                                                      \n"},
-{"                        *%(**#/         ,  ,  .          %&                                                                                                     \n"},
-{"                       %%,    @ .  &    #  ,  *  .        %#                                                                                                    \n"},
-{"                       &%* *.#  (  .                . .   &%                                                                .#%(*&%%%%%%@@.  &&                 \n"},
-{"                      %% # * .% &  / /  .   .  ,    (      %.                                             #&##&&#%%%%@%.        &*%@ .    .#./&/                \n"},
-{"                      &*   % * .& .           ,           &%                              &%##&#%%%(*      / (/ &       ,/#//      .%/& .     %%                \n"},
-{"                      %&.  # / ,, .  (.    ,  #.          #%                               ,(.      .((/         .*(.     ./.&,.       .#*@ ( /#                \n"},
-{"                      %&.( &.,( , , ,. .. . /  /       .  *#                                 @&         %/&*%       .%  %.(    (&#../@,. .,, ,&%                \n"},
-{"                      *%&, #... ( #..% ( #  / .(  ,  .   %,                                    &%   .     .(@,%%.   *     ,#(%%/   ... #&. .  *%(               \n"},
-{"                       @&%.  ,@.% . #    % .  /  ,. ,   %%                                       #& % *        . .# %, ..    , / *,,,*,  . /.*,%#               \n"},
-{"                         &%/% / & (   #  * ,, &  *  *  &%                                          /&  *%(.,.       ,*%%,(/.        %@/#  #   #&%               \n"},
-{"                           &%% @*/,((%.. *., /.  *  (&%,                                             &, ,  #.%,&/   .// ,%*@%#**   .. **(*%%//,%%               \n"},
-{"                          @&&&&(%&%&((#/&%%&%&%#*#%%                                                  //&     ( ,@%*/** /  . &&(/#. , .(   ,.(.*(%              \n"},
-{"                     %%& ( #  *. ., *    (        *%%%%%                                                (& ,,  ,*.(///  /(/ /..# (,(%%&#,, *, .*%&              \n"},
-{"                   %% &.& .&.*     &          #        /%                                                 @%  ,*/ (%,(,.,#*@  *./,,* #.,((///*,%*%              \n"},
-{"                (#& / &.### ** /. *#./ *& /((* .%./    .&%(                                               &%*       */(*/%&#%#*#@%%%%/%%&(#@%&%#%%              \n"},
-{"              #,% & *,.@, % *  ( .,(/&/      ,             (%                                          &% /*%%/%/%.*@./. (#@.*/,**.&(&,& /(,&. #%               \n"},
-{"             %# ,  .(. ,  . * %     ,.   ,.   .*             @%                                     %%. ..  & .  ,  #.#%./,/&,.(,**.##*.#(.( ,%#                \n"},
-{"            ##  /,%./% *   .  ..   &  (  ,  *,     *          %&                                 &%%&% ,  &%%(.(%@%,&(%(.(&&#%,&.((&(%%###((%(                  \n"},
-{"            %%, *(#..#/,#/ #,* */  #  / ((/* (  ,  * #  *     &#                              @/&  ( /.%#%&%*%%@% &&#%%%%@@/(%/%&#%&%&#%#%(&#                   \n"},
-{"           %%   * /  . * & * /  ( # .%#(     %  *  . ,  ,      &%                          .%% , . # ((#%/%&%##&/ &%(/%(&/% %*&#%*#&%%%%%&#*                    \n"},
-{"           &&*,,( # *%.# &#/(. #@(#.    % .        ( *    ..   &%                        %&  ., # &%#%#(%&%%%#//,@%%#%#&&%%/.(% &&&&&/#((%                      \n"},
-{"          &#, . *  * ##.,*.,@  *., % %  & ./ *  *    (  .      #&                     ##@ ,   . #&@.&%#&&.##%(#&#%((&#&%&#/%#%%% %%%&&#%&                       \n"},
-{"          %%/,,(*( ##(/ . ( .,   @    ( /..,. /** .  ,         &#                  &#@ / (   %&(,%%*%(( %&*%,%%##&%%&#%//%&,#%%%&%%%&%%                         \n"},
-{"          %%* % #.//%( ., # /  ,/**&% *  % . . #/  ..          &%                &&   #   &&(*/(.& %%%%%%%&&%%%%#%,%%/%%%**%%#%*&%%&%(                          \n"},
-{"         .&( ,, %. & /  *,,..  # *  # ,  * / ..#/.  %  &  &    #*                   *%&&%#%%##&(*&#/%%%%&@**##&/,#%%**&%%%&&#&##/%*(,                           \n"},
-{"         %%   , (& %,%  / /  , %.** ,  . * *,#.#%#  .  #  /    &#                                         @%#%((%%%%*#(#&&%@&%#%##%                             \n"},
-{"         %% ,%**,  / (  * %. ##*  # (  . .(* ((%/.@/*     .    *%                                                                                               \n"},
-{"         &&. ( %#  # #  % (  / (  . / .  #.(. /%, &.(  . *  ,   %                                                                                               \n"},
-{"         %%,** %,  ( ,/ , ,  #*%  ,.,* ...../ &( ., *           #(                                                                                              \n"},
-{"        ,%,%/. @(, * *  *    ( .. . .  ,  & /*./ .% /    .      (&                                                                                              \n"},
-{"        (& **@ .%( /  % (   (   ..&( *, * %/, /&%  ,, /, . ,    (#                                                                                              \n"},
-{"        (* (   ,.  %            # /  ,  .   (,,(( & . *    ( &  %*                                                                                              \n"}
+{"                                      .@%%&@                                                                                                                    "},
+{"                                %&#&          .&%(&                                                                                                             "}, 
+{"                             &&%  * / .  *         %%%                                                                                                          "},
+{"                           &%#,/ . .  /     /         %%                                                                                                        "},
+{"                          %%   . % @  ,       #         %%                                                                                                      "},
+{"                        *%(**#/         ,  ,  .          %&                                                                                                     "},
+{"                       %%,    @ .  &    #  ,  *  .        %#                                                                                                    "},
+{"                       &%* *.#  (  .                . .   &%                                                                .#%(*&%%%%%%@@.  &&                 "},
+{"                      %% # * .% &  / /  .   .  ,    (      %.                                             #&##&&#%%%%@%.        &*%@ .    .#./&/                "},
+{"                      &*   % * .& .           ,           &%                              &%##&#%%%(*      / (/ &       ,/#//      .%/& .     %%                "},
+{"                      %&.  # / ,, .  (.    ,  #.          #%                               ,(.      .((/         .*(.     ./.&,.       .#*@ ( /#                "},
+{"                      %&.( &.,( , , ,. .. . /  /       .  *#                                 @&         %/&*%       .%  %.(    (&#../@,. .,, ,&%                "},
+{"                      *%&, #... ( #..% ( #  / .(  ,  .   %,                                    &%   .     .(@,%%.   *     ,#(%%/   ... #&. .  *%(               "},
+{"                       @&%.  ,@.% . #    % .  /  ,. ,   %%                                       #& % *        . .# %, ..    , / *,,,*,  . /.*,%#               "},
+{"                         &%/% / & (   #  * ,, &  *  *  &%                                          /&  *%(.,.       ,*%%,(/.        %@/#  #   #&%               "},
+{"                           &%% @*/,((%.. *., /.  *  (&%,                                             &, ,  #.%,&/   .// ,%*@%#**   .. **(*%%//,%%               "},
+{"                          @&&&&(%&%&((#/&%%&%&%#*#%%                                                  //&     ( ,@%*/** /  . &&(/#. , .(   ,.(.*(%              "},
+{"                     %%& ( #  *. ., *    (        *%%%%%                                                (& ,,  ,*.(///  /(/ /..# (,(%%&#,, *, .*%&              "},
+{"                   %% &.& .&.*     &          #        /%                                                 @%  ,*/ (%,(,.,#*@  *./,,* #.,((///*,%*%              "},
+{"                (#& / &.### ** /. *#./ *& /((* .%./    .&%(                                               &%*       */(*/%&#%#*#@%%%%/%%&(#@%&%#%%              "},
+{"              #,% & *,.@, % *  ( .,(/&/      ,             (%                                          &% /*%%/%/%.*@./. (#@.*/,**.&(&,& /(,&. #%               "},
+{"             %# ,  .(. ,  . * %     ,.   ,.   .*             @%                                     %%. ..  & .  ,  #.#%./,/&,.(,**.##*.#(.( ,%#                "},
+{"            ##  /,%./% *   .  ..   &  (  ,  *,     *          %&                                 &%%&% ,  &%%(.(%@%,&(%(.(&&#%,&.((&(%%###((%(                  "},
+{"            %%, *(#..#/,#/ #,* */  #  / ((/* (  ,  * #  *     &#                              @/&  ( /.%#%&%*%%@% &&#%%%%@@/(%/%&#%&%&#%#%(&#                   "},
+{"           %%   * /  . * & * /  ( # .%#(     %  *  . ,  ,      &%                          .%% , . # ((#%/%&%##&/ &%(/%(&/% %*&#%*#&%%%%%&#*                    "},
+{"           &&*,,( # *%.# &#/(. #@(#.    % .        ( *    ..   &%                        %&  ., # &%#%#(%&%%%#//,@%%#%#&&%%/.(% &&&&&/#((%                      "},
+{"          &#, . *  * ##.,*.,@  *., % %  & ./ *  *    (  .      #&                     ##@ ,   . #&@.&%#&&.##%(#&#%((&#&%&#/%#%%% %%%&&#%&                       "},
+{"          %%/,,(*( ##(/ . ( .,   @    ( /..,. /** .  ,         &#                  &#@ / (   %&(,%%*%(( %&*%,%%##&%%&#%//%&,#%%%&%%%&%%                         "},
+{"          %%* % #.//%( ., # /  ,/**&% *  % . . #/  ..          &%                &&   #   &&(*/(.& %%%%%%%&&%%%%#%,%%/%%%**%%#%*&%%&%(                          "},
+{"         .&( ,, %. & /  *,,..  # *  # ,  * / ..#/.  %  &  &    #*                   *%&&%#%%##&(*&#/%%%%&@**##&/,#%%**&%%%&&#&##/%*(,                           "},
+{"         %%   , (& %,%  / /  , %.** ,  . * *,#.#%#  .  #  /    &#                                         @%#%((%%%%*#(#&&%@&%#%##%                             "},
+{"         %% ,%**,  / (  * %. ##*  # (  . .(* ((%/.@/*     .    *%                                                                                               "},
+{"         &&. ( %#  # #  % (  / (  . / .  #.(. /%, &.(  . *  ,   %                                                                                               "},
+{"         %%,** %,  ( ,/ , ,  #*%  ,.,* ...../ &( ., *           #(                                                                                              "},
+{"        ,%,%/. @(, * *  *    ( .. . .  ,  & /*./ .% /    .      (&                                                                                              "},
+{"        (& **@ .%( /  % (   (   ..&( *, * %/, /&%  ,, /, . ,    (#                                                                                              "},
+{"        (* (   ,.  %            # /  ,  .   (,,(( & . *    ( &  %*                                                                                              "}
                                                                                                                                        
 };
 
-char cutsceneFinal[50][250];
+char cutsceneFinal[80][250]={
+{"                                                                                        #&&                          "},
+{"                                                                           ##%         %% &&            #            "},
+{"                                                                            %*&&&     %@   #%        (##&            "},
+{"                                                                            (#   @##/%%    %,(&  (,%&  &#            "},
+{"                                                                            @/      (    * ,. &(#   &.&@             "},
+{"                                                                             %%       *    .  , ../** &(             "},
+{"                                                                             &#       .       %   ( ,%&              "},
+{"                                                                             #&,      , * ., ,. .    /%              "},
+{"                                                                                 &%.%(%(#%%&%&(#&%@#                 "},
+{"                                                                                                                     "},
+{"                                                                       /%,%%##@&%&#@%@%&%##&%@@/#@/(###*@&/          "},
+{"                       _ ****- _                                  @*#&                *(/ , *.*   *.,.   /. /    %&/%"},
+{"                     %% ./     %#                               &%   ,    ,&@#*%((% &#*@%(((%(%%#&%&#%&&%%%&#& /, .#&"},
+{"                   .%.. /    .   &#                             &&   .                  .  *  (. , .*,. #,. *./,(& &&"},
+{"                   %.  *, * .     #             ##              #&% ,              @ .  .  , .  ,, . ,,&/ .*@/#.(,.##"},
+{"                  #%  *  * .      %/         %# *#                  (#&#%%%%&%##*#&@%&&*&#(&%#%&###%&@%###%%(%%&#    "},
+{"                   #(. ./  . ,  * &         &  *##                    #/(% & && #,#%  #  # &,,(% //,, % *#*%#((      "},
+{"                    %/(* // *. ,,#         #    #                     &%(  . . %* .* # // .*.&** /,,, * # /(@.#/     "},
+{"                     #&##*,***%%          # .//#                      &(          .    ,  ( #, /.* (/,% . (./.##     "},
+{"                  %%#.,//%///#.#         ( **,&                       %#  *          / ..   ( .*..  .&, % * ..&(     "},
+{"                (/. .% .*#,/.(,(*%      # /**%                        &&               (  . ,    ( # ,* * /.@,%#     "},
+{"               (%   ,. ,, *  *. /(#    ( %* #                         %(  ,            (    .    .   (./* / #.#%     "},
+{"               #@.,. .,, /  , ..%.%  ,% *..#                          %%               .    , ,  & * ,,(* /. .&&     "},
+{"                % . , ..# .. /*,%/#%#% ..,#                           #@  ,         ,    . .,    # , ., / &*& %/     "},
+{"                &#,%%,. %//*#(/(%,%#., %%(                            *%            .       , ,  , &  * .,,*/,(%     "},
+{"                #(*%//..  %/    (*   .,%#%%                           &(  *               . . *  / , .# *.%,.,##     "},
+{"                 #%%%&##,(( ,./,%/, %/%                               /%             * ,    #    & ,  /**,,%..#&     "},
+{"                #,/././(*#*/(/**/%#/%                                 /%  / .                  & , .  .  * ( .%%     "},
+{"                #*, / **.( ,* ,/**&%                                  (%        #  ,    * .    (    .  %.#%*..(/     "},
+{"               %,.  .#  * .. **. ,%.                                  /%    .           *  . # (  / , *  ,,*#.&&     "},
+{"               %.  /, *    .*  //*,#                                  %(                ,  * .    . .# . .*. .%%     "},
+{"                &%##   .     /%&#%(                                   /(  %   .    .  ,    .    .    # /#,& ..%&     "},
+{"                &,  /*(#   %*%.*.#                                    (/                 . .  # ,/ , .. ( (.#,%%     "},
+{"               ,%..**.%    /% ..%#                                    #(*       ,   &    *    .  / %. &.,.(#/ %(     "},
+{"               #. ,* #     ##/,*.%                                    %@            ,  .    /    .  , % ,, #**/#     "},
+{"              %*  /.%       &   .%                                    #%,                      ,  % #  , &.  .@(     "},
+{"              %, ,#%.       %*( .%(                                   %#             .      .*      #  #.%/ (/&(     "},
+{"             *(,, ,&        % ., *%                                   %(    ,   .       .    @  .  * , (# ..*.##     "},
+{"             #(*%.#%        /( (/ .(##                                %&                      *  . , ( .# **%/@*     "},
+{"             #. ,*  # / / /./%%/*. .. #%.                             %&  *              .  * (. &    #,,%##,,%%     "},
+{"                (#%* , .   ,                                          %&               .    .  ( (. , /**, *..&%     "},
+{"                                                                      %@               *  #  * (  , *%.#.* (. %,     "},
+{"                                                                      ##  /            .     /  #    %.% * & .&/     "},
+{"                                                                      &%                & (/ *  , #@ * (.&%( ,(#     "},
+{"                                                                      %&                @  /  ,  * % ##/, # @,#%     "},
+{"                                                                      &#              .  .       / , /% @%%,@,&(     "},
+{"                                                                      #@            ,    %  / /# #,.. & */ / ,@%     "},
+{"                                                                      &%  % .     .  . ,  & *( , % .%, # . / .&/     "},
+{"                                                                      @#  /          ,    *    #, #. & & . ( @#*     "},
+{"                                                                       (((&(#        &    .& (  /   * . &@(#(@       "},
+{"                                                                              /&/@#%&###&#&(#&#%&&#&%@/              "}
+};
 //menu em ascii ↓
 /*char menuletra[10][250]={
 {" _____ ______   _______   ________   ___  ___      \n"},     
@@ -245,18 +297,18 @@ int i, j, k;
 int faseatual=0;
 int morto=0;
 char embaixoDoJogador = ' ';// armazena o que ta embaixo do jogador (pode ser ' ', '@', etc.)
-char textoNpc[300]={"Os ecos do castelo rugem....ele clama por um desafiante....\nSe você for adentrá-lo, que fique de dica:\nUse W,A,S,D para se movimentar e I para interagir...\nPor favor, fique longe dos #,X e V... principalmente do V....\nE cuidado... o castelo permite apenas 3 erros....\n\n"};
+char textoNpc[350]={"Os ecos do castelo rugem....ele clama por um desafiante....\nSe você for adentrá-lo, que fique de dica:\nUse W,A,S,D para se movimentar e I para interagir...\nPor favor, fique longe dos #,X e V... principalmente do V....mas não tenha medo, os monstros não gostam de luz...\nE cuidado... o castelo permite apenas 3 erros....\n\n"};
 
-/*================== funções =============================================
-  ================== funções =============================================
-  ================== funções =============================================
-  ================== funções =============================================
-  ================== funções =============================================
-  ================== funções =============================================
-  ================== funções =============================================
-  ================== funções =============================================
+/*================== funcões =============================================
+  ================== funcões =============================================
+  ================== funcões =============================================
+  ================== funcões =============================================
+  ================== funcões =============================================
+  ================== funcões =============================================
+  ================== funcões =============================================
+  ================== funcões =============================================
 */
-//============funções de posições e coordenadas do cursor =========
+//============funcões de posicões e coordenadas do cursor =========
 void coordenadas(int x, int y)
 {
 COORD coord;
@@ -297,7 +349,7 @@ void limparTexto()
     }
 }
 
-//=========== funções relacionas a mapas, no geral ============================
+//=========== funcões relacionas a mapas, no geral ============================
 
 void imprimirMapa() 
 {
@@ -392,7 +444,7 @@ void atualizarMapaAtual()
     }
 }
 
-void desenharDiferenças()
+void desenharDiferencas()
 {
 
 int tam;
@@ -506,7 +558,7 @@ int tam;
 
 }
 
-void mudançaDeFases()
+void mudancaDeFases()
 {
     system("cls");
     embaixoDoJogador = ' ';
@@ -515,13 +567,13 @@ void mudançaDeFases()
     
 }
 
-// =========== funções relacionadas ao jogador ===========
+// =========== funcões relacionadas ao jogador ===========
 void verificarMorto()
 {
     if (reinicios >= 3) 
     {
         cursorRodape();
-        printf("VOCÊ NÃO MERECE ESTAR NO CASTELO, SEU ENERGÚMENO INÚTIL\n");
+        printf("VOCÊ NaO MERECE ESTAR NO CASTELO, SEU ENERGÚMENO INÚTIL\n");
         morto=1;
     }
 }
@@ -531,7 +583,7 @@ void resetarJogador()
     mapa[faseatual][jogadorY][jogadorX] = embaixoDoJogador; // restaura o que estava ali
     jogadorX = posInicialX;
     jogadorY = posInicialY;
-    embaixoDoJogador = ' '; // posição inicial é chão
+    embaixoDoJogador = ' '; // posicao inicial é chao
     mapa[faseatual][jogadorY][jogadorX] = '&';
 }
 
@@ -547,7 +599,7 @@ void moverJogador(char tecla)
     else
         return;
 
-    // Verificação de limites
+    // Verificacao de limites
     int tam;
     if (faseatual == 0) tam = TAM_VILA;
     else if (faseatual == 1) tam = TAM_F1;
@@ -576,7 +628,7 @@ void moverJogador(char tecla)
 
     // mover o jogador
     mapa[faseatual][jogadorY][jogadorX] = embaixoDoJogador; // restaura o que estava antes
-    embaixoDoJogador = destino; // salva o que está na nova posição
+    embaixoDoJogador = destino; // salva o que está na nova posicao
     jogadorX = novoX;
     jogadorY = novoY;
     mapa[faseatual][jogadorY][jogadorX] = '&';
@@ -702,7 +754,7 @@ void interagir()
     else if (embaixoDoJogador == 'O')
     {
         cursorRodape();
-        printf("Você apertou o botão!\n");
+        printf("Você apertou o botao!\n");
         if (faseatual == 2)
         {
             mapa[2][14][14] = ' ';
@@ -753,7 +805,7 @@ void interagir()
 
 }
 
-//===============funções dos monstros ====================
+//===============funcões dos monstros ====================
 void moverMonstroAleatorio() 
 {
     int x, y;
@@ -784,7 +836,7 @@ void moverMonstroAleatorio()
     int posYmonstro[quantMonstro];
 
     int contagem;
-    //======= escolhe muma das 4 direções pro monstro se movimentar ==========
+    //======= escolhe muma das 4 direcões pro monstro se movimentar ==========
     for (contagem = 0; contagem < quantMonstro; contagem++)
     {
         int dir = rand() % 4;
@@ -793,7 +845,7 @@ void moverMonstroAleatorio()
     
     contagem=0;
 
-    //===== salva a posição dos monstros, para quando for atualizar, apagar o X antigo do mapa==========
+    //===== salva a posicao dos monstros, para quando for atualizar, apagar o X antigo do mapa==========
     for (x = 0; x < tam; x++)
     {
         for (y = 0; y < tam; y++)
@@ -811,7 +863,7 @@ void moverMonstroAleatorio()
     
 
 
-    //======== aqui de fato é o movimento, adiciona o valor de direção, verifica a posição antiga e apaga o que estava lá e desenha um X na posição nova, além de verificar colisão com o jogador================================
+    //======== aqui de fato é o movimento, adiciona o valor de direcao, verifica a posicao antiga e apaga o que estava lá e desenha um X na posicao nova, além de verificar colisao com o jogador================================
     for (i =0;i<quantMonstro;i++)  
     {
         int x =posXmonstro[i];
@@ -841,7 +893,7 @@ void moverMonstroAleatorio()
         }
     }
 
-    /*========= código de movimentação antiga, caso queriam rever!!!=================
+    /*========= código de movimentacao antiga, caso queriam rever!!!=================
 
         
     if (faseatual==2)
@@ -903,7 +955,7 @@ void moverMonstroInteligente() {
     for (y = 0; y < TAM; y++) {
         for (x = 0; x < TAM; x++) {
             if (mapa[faseatual][y][x] == 'V') {
-                // Calcula a diferença de posição entre monstro e jogador
+                // Calcula a diferenca de posicao entre monstro e jogador
                 int deltaX = jogadorX - x;
                 int deltaY = jogadorY - y;
                 
@@ -912,19 +964,19 @@ void moverMonstroInteligente() {
                 
                 // Determina o movimento baseado na maior distância (Manhattan distance)
                 if (abs(deltaX) > abs(deltaY)) {
-                    // Move horizontalmente em direção ao jogador
+                    // Move horizontalmente em direcao ao jogador
                     if (deltaX > 0) novoX++; // Jogador está à direita
                     else if (deltaX < 0) novoX--; // Jogador está à esquerda
                 } else if (abs(deltaY) > 0) {
-                    // Move verticalmente em direção ao jogador
+                    // Move verticalmente em direcao ao jogador
                     if (deltaY > 0) novoY++; // Jogador está abaixo
                     else if (deltaY < 0) novoY--; // Jogador está acima
                 }
                 
-                // Verifica se a nova posição é válida
+                // Verifica se a nova posicao é válida
                 char destino = mapa[faseatual][novoY][novoX];
                 
-                // Pode se mover para espaços vazios ou onde está o jogador
+                // Pode se mover para espacos vazios ou onde está o jogador
                 if (destino == ' ' || destino == '&') {
                     if (destino == '&') {
                         // Monstro pegou o jogador
@@ -935,12 +987,12 @@ void moverMonstroInteligente() {
                         resetarJogador();
                         return;
                     }
-                    // Move o monstro para a nova posição
+                    // Move o monstro para a nova posicao
                     mapa[faseatual][novoY][novoX] = 'V';
                     mapa[faseatual][y][x] = ' ';
                     return;
                 }
-                // Se não pode se mover na direção preferida, tenta movimento alternativo
+                // Se nao pode se mover na direcao preferida, tenta movimento alternativo
                 else {
                     // Tenta movimento vertical se tentou horizontal primeiro
                     if (abs(deltaX) > abs(deltaY) && abs(deltaY) > 0) {
@@ -989,10 +1041,10 @@ void moverMonstroInteligente() {
     }
 }
 
-//==== funções gerais do jogo e do terminal windows================
+//==== funcões gerais do jogo e do terminal windows================
 void RodarOJogo()
 {
-    desenharDiferenças();
+    desenharDiferencas();
     desenharEfeitos();
 
     //======= isso aqui faz com que o programa rode sem a necessidade de esperar uma tecla ser acionada, ou seja, em vez de ser turn-bases se torna RTS.
@@ -1021,20 +1073,20 @@ void RodarOJogo()
     
 }
 
-void animaçãoMenu()
+void animacaoMenu()
 {           
     int tempo=0;
     int frames=0;
     int menu_contador=10;
     int i=0;
-    int j=24; //<------JAMAIS MUDAR ESSA VARIAVEL PARA 10 OU MAIS
-//animação de iniciar o menu
+    int j=24; //<------JAMAIS MUDAR ESSA VARIAVEL PARA 25 OU MAIS//===== ela é sempre 1 menor que q quantidade de linhas da imagem usada;
+ //animacao de iniciar o menu
     
     for(i=0;i<j;i++)
     {  
         system("cls");
         frames=j-1-i;
-        for ( tempo = 0; tempo < 40000000; tempo++) //isso eh so pra nao printar instantaneamente....
+        for ( tempo = 0; tempo < 40000000; tempo++) //isso eh so pra nao printar instantaneamente....//// comentario do arthur: eu nao sabia usar a função Sleep e fiz isso aquikkkk
         {
             if (tempo==400000)
             {        
@@ -1046,6 +1098,7 @@ void animaçãoMenu()
         }
     }
 }
+
 
 void ajustarTamanhoConsole(int colunas, int linhas) 
 {
@@ -1105,14 +1158,14 @@ void configurarCores()
 int main()
 {
     srand(time(NULL));
-    ajustarTamanhoConsole(200,60);
+    ajustarTamanhoConsole(180,50);
     configurarLinguagem();
     configurarCores();
     int linha,coluna;
     int menu=0;
-    while (menu!=3) //jogo começa aqui
+    while (menu!=3) //jogo comeca aqui
     {   
-        animaçãoMenu();
+        animacaoMenu();
         resetGeral();  
         
         printf("\nPara jogar digite 1\nPara ver os créditos digite 2");
@@ -1143,14 +1196,14 @@ int main()
                 }
 
                 if (morto)break;
-                mudançaDeFases();
+                mudancaDeFases();
 
                 while (faseatual==1 && morto==0)
                 {
                     RodarOJogo();
                 }
                 if (morto)break;
-                mudançaDeFases();
+                mudancaDeFases();
 
                 while (faseatual==2 && morto==0)
                 {
@@ -1160,17 +1213,21 @@ int main()
                 system("cls");
                 for (i = 0; i < 50; i++)
                 {
-                    printf("%s",cutscene2[i]);
+                    printf("%s\n",cutscene2[i]);
                 }
                 system("pause");
-                mudançaDeFases();
+                mudancaDeFases();
 
                 while (faseatual==3 && morto==0)
                 {
                     RodarOJogo();
                 }
                 if (morto)break;
-
+                for (i = 0; i < 50; i++)
+                {
+                    printf("%s\n",cutsceneFinal[i]);
+                }
+                system("pause");
                 if (faseatual==4)
                 {   
                     limparTexto();
